@@ -1,0 +1,116 @@
+.header {
+    border: 1px solid #ECECEC;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.mail__container {
+    display: flex;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    & {
+        color: var(--button-color);
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19em;
+        text-decoration: none;
+        margin-right: 93px;
+    }
+
+    &__head {
+        color: #000000;
+    }
+}
+
+.page__link .link {
+    color: var(--head-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    text-decoration: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page__link .link:hover,
+.page__link .link:focus {
+    color: var(--button-color);
+}
+
+.page__link .link.current {
+    color: var(--button-color);
+}
+
+.page__link,
+.page__contact {
+    display: flex;
+}
+
+.page__item {
+    margin-right: 50px;
+}
+
+.link {
+    padding: 32px 0;
+    display: block;
+    position: relative;
+
+    &.active-link::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--button-color);
+        border-radius: 2px;
+        left: 0%;
+        bottom: 0px;
+    }
+}
+
+.headder__left {
+    margin-left: auto;
+}
+
+.page__contact {
+    &-item:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    &-mail {
+        color: var(--p-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.12em;
+        text-decoration: none;
+        padding: 32px 0;
+        display: flex;
+        align-items: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &-mail:hover,
+    .page__contact-mail:focus {
+        color: var(--button-color);
+        fill: var(--button-color);
+    }
+
+    &-svg {
+        margin-right: 10px;
+        align-items: center;
+        text-align: center;
+    }
+}
