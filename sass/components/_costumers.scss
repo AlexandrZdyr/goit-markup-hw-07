@@ -2,11 +2,8 @@
     &__tittle {
         color: var(--head-color);
         font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.17em;
+        @include font(36px, 700, 1.17em, 0.03em);
         text-align: center;
-        letter-spacing: 0.03em;
     }
 
     &__link {

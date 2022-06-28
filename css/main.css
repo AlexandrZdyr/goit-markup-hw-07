@@ -84,7 +84,7 @@ ul {
 .logo {
   color: var(--button-color);
   font-family: "Raleway", sans-serif;
-  letter-spacing: 0.03em;
+  @in letter-spacing: 0.03em;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19em;

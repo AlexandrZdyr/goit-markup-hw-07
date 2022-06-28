@@ -16,11 +16,8 @@
 
 .tittle__text {
     color: var(--animation-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36em;
+    @include font(44px, 900, 1.36em, 0.06em);
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     max-width: 696px;
     text-align: center;
@@ -30,14 +27,11 @@
 .tittle__botton {
     color: var(--animation-color);
     background-color: var(--button-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 700, 1.88em, 0.06em);
     border: 0px;
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
     font-family: inherit;
     cursor: pointer;
     margin: 0 auto;

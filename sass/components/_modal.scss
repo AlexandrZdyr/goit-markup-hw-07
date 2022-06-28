@@ -157,10 +157,7 @@
 }
 
 .checkbox__form-download {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    @include font(24px, 400, 1.71em, 0.03em);
     text-decoration-line: underline;
     color: #2196F3;
     margin-right: 8px;

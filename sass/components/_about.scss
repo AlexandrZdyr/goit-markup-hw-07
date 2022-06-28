@@ -24,10 +24,7 @@
 
     &-tittle {
         color: var(--head-color);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14em;
-        letter-spacing: 0.03em;
+        @include font(14px, 700, 1.14em, 0.03em);
         text-transform: uppercase;
         margin-bottom: 10px;
     }

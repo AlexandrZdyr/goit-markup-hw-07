@@ -33,17 +33,14 @@
     }
 
     &-text {
+        @include font(14px, 700, 1.43em, 0.03em);
         display: block;
         position: absolute;
         bottom: 27px;
         left: 50%;
         transform: translate(-50%);
         height: 16px;
-        font-size: 14px;
-        line-height: 1.43;
-        font-weight: 700;
         text-align: center;
-        letter-spacing: 0.03em;
         color: var(--animation-color);
         text-transform: uppercase;
         z-index: 1;

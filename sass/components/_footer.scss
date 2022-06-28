@@ -56,10 +56,7 @@
 .footer__tittle {
     margin-bottom: 72px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14em;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.14em, 0.03em);
     text-transform: uppercase;
     color: var(--animation-color);
     margin-bottom: 20px;
