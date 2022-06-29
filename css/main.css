@@ -187,10 +187,8 @@ ul {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-    background-image: linear-gradient(to right,
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)),
-        url(/image/hero-img.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/image/hero-img.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/image/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -744,9 +742,11 @@ ul {
 }
 
 .filters__item {
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 25px;
   border: 1px solid #EEEEEE;
+}
+.filters__item:not(:last-child) {
+  margin-right: 25px;
 }
 .filters__item:hover .filters__top-text {
   -webkit-transform: translateY(0);
