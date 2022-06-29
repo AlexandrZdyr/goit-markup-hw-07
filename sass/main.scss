@@ -1,5 +1,6 @@
 @import "./base/reset";
 @import './utils/variable.scss';
+@import './utils/mixins.scss';
 @import './components/header';
 @import './components/title';
 @import './components/about';
@@ -8,5 +9,5 @@
 @import './components/costumers';
 @import './components/footer';
 @import './components/subscription';
-@import './components/portfolio';
+@import "./components/portfolio";
 @import './components/modal';

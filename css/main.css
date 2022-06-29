@@ -66,7 +66,7 @@ ul {
   margin: 0 auto;
 }
 
-.mail__container {
+.mail-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,10 +84,10 @@ ul {
 .logo {
   color: var(--button-color);
   font-family: "Raleway", sans-serif;
-  @in letter-spacing: 0.03em;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19em;
+  letter-spacing: 0.03em;
   text-decoration: none;
   margin-right: 93px;
 }
@@ -95,7 +95,7 @@ ul {
   color: #000000;
 }
 
-.page__link .link {
+.page-link .link {
   color: var(--head-color);
   font-weight: 500;
   font-size: 14px;
@@ -107,23 +107,23 @@ ul {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page__link .link:hover,
-.page__link .link:focus {
+.page-link .link:hover,
+.page-link .link:focus {
   color: var(--button-color);
 }
 
-.page__link .link.current {
+.page-link .link.current {
   color: var(--button-color);
 }
 
-.page__link,
-.page__contact {
+.page-link,
+.page-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.page__item {
+.page-item {
   margin-right: 50px;
 }
 
@@ -143,14 +143,14 @@ ul {
   bottom: 0px;
 }
 
-.headder__left {
+.headder-left {
   margin-left: auto;
 }
 
-.page__contact-item:not(:last-child) {
+.page-contact-item:not(:last-child) {
   margin-right: 50px;
 }
-.page__contact-mail {
+.page-contact-mail {
   color: var(--p-color);
   font-weight: 500;
   font-size: 14px;
@@ -168,12 +168,12 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.page__contact-mail:hover,
-.page__contact .page__contact-mail:focus {
+.page-contact-mail:hover,
+.page-contact .page-contact-mail:focus {
   color: var(--button-color);
   fill: var(--button-color);
 }
-.page__contact-svg {
+.page-contact-svg {
   margin-right: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -196,11 +196,11 @@ ul {
 
 .tittle__text {
   color: var(--animation-color);
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36em;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   max-width: 696px;
   text-align: center;
@@ -210,9 +210,10 @@ ul {
 .tittle__botton {
   color: var(--animation-color);
   background-color: var(--button-color);
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  font-weight: 700;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
   border: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +222,6 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   font-family: inherit;
   cursor: pointer;
   margin: 0 auto;
@@ -267,8 +267,8 @@ ul {
 }
 .about__list-tittle {
   color: var(--head-color);
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -314,6 +314,10 @@ ul {
   background: rgba(47, 48, 58, 0.8);
 }
 .about__us-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.43em;
+  letter-spacing: 0.03em;
   display: block;
   position: absolute;
   bottom: 27px;
@@ -321,11 +325,7 @@ ul {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   height: 16px;
-  font-size: 14px;
-  line-height: 1.43;
-  font-weight: 700;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--animation-color);
   text-transform: uppercase;
   z-index: 1;
@@ -367,11 +367,11 @@ ul {
 }
 .team__list-tittle {
   color: var(--head-color);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19em;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 10px;
   margin-top: 0px;
 }
@@ -429,6 +429,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .customers__link {
   margin-top: 50px;
   display: -webkit-box;
@@ -436,6 +437,7 @@ ul {
   display: flex;
   text-align: center;
 }
+
 .customers__svg {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,13 +461,17 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers__svg:hover, .customers__svg:focus {
+
+.customers__svg:hover,
+.customers__svg:focus {
   fill: #188CE8;
   border-color: var(--button-color);
 }
+
 .customers__item:not(:last-child) {
   margin-right: 30px;
 }
+
 .customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,8 +541,8 @@ ul {
 .footer__tittle {
   margin-bottom: 72px;
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -591,9 +597,9 @@ ul {
 }
 .subscription__title {
   display: block;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  font-weight: 700;
+  line-height: 1.14em;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--animation-color);
@@ -667,9 +673,9 @@ ul {
   height: 50px;
   border: 0px;
   background-color: var(--button-color);
-  font-weight: 700;
   font-size: 16px;
-  line-height: 1.875;
+  font-weight: 700;
+  line-height: 1.87em;
   letter-spacing: 0.06em;
   color: var(--animation-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -736,11 +742,9 @@ ul {
 }
 
 .filters__item {
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-left: 30px;
   border: 1px solid #EEEEEE;
-}
-.filters__item:not(:last-child) {
-  margin-right: 25px;
 }
 .filters__item:hover .filters__top-text {
   -webkit-transform: translateY(0);
@@ -774,16 +778,15 @@ ul {
 
 .filters__project-tettle {
   color: var(--head-color);
-  font-weight: 700px;
   font-size: 18px;
+  font-weight: 700;
   line-height: 2em;
-  margin-bottom: 4px;
-  letter-spacing: 60000000000000000000000000000;
+  letter-spacing: 0.06em;
 }
 .filters__project-text {
   color: var(--p-color);
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.88em;
   letter-spacing: 0.03em;
 }
@@ -981,9 +984,9 @@ ul {
 }
 
 .checkbox__form-download {
+  font-size: 24px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71em;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;

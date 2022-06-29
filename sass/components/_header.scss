@@ -9,7 +9,7 @@
     margin: 0 auto;
 }
 
-.mail__container {
+.mail-container {
     display: flex;
 }
 
@@ -32,7 +32,7 @@
     }
 }
 
-.page__link .link {
+.page-link .link {
     color: var(--head-color);
     font-weight: 500;
     font-size: 14px;
@@ -42,21 +42,21 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page__link .link:hover,
-.page__link .link:focus {
+.page-link .link:hover,
+.page-link .link:focus {
     color: var(--button-color);
 }
 
-.page__link .link.current {
+.page-link .link.current {
     color: var(--button-color);
 }
 
-.page__link,
-.page__contact {
+.page-link,
+.page-contact {
     display: flex;
 }
 
-.page__item {
+.page-item {
     margin-right: 50px;
 }
 
@@ -77,11 +77,11 @@
     }
 }
 
-.headder__left {
+.headder-left {
     margin-left: auto;
 }
 
-.page__contact {
+.page-contact {
     &-item:not(:last-child) {
         margin-right: 50px;
     }
@@ -100,7 +100,7 @@
     }
 
     &-mail:hover,
-    .page__contact-mail:focus {
+    .page-contact-mail:focus {
         color: var(--button-color);
         fill: var(--button-color);
     }
