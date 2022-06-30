@@ -134,7 +134,7 @@
     }
 }
 
-.checkbox__icon {
+.checkbox-icon {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -147,7 +147,7 @@
     margin-bottom: 30px;
 }
 
-.checkbox__icon::before {
+.checkbox-icon::before {
     content: "";
     width: 16px;
     height: 15px;
@@ -156,14 +156,14 @@
     margin-right: 7px;
 }
 
-.checkbox__form-download {
+.checkbox-form-download {
     @include font(24px, 400, 1.71em, 0.03em);
     text-decoration-line: underline;
     color: #2196F3;
     margin-right: 8px;
 }
 
-.modal__private:checked + .checkbox__icon::before {
+.modal__private:checked + .checkbox-icon::before {
     background-color: var(--button-color);
     background-image: url(/image/Vector.svg);
     border: none;
